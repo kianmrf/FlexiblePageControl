@@ -231,6 +231,7 @@ public class FlexiblePageControl: UIView {
             } else {
                 let x = scrollView.contentOffset.x - itemSize
                 moveScrollViewView(x: x, duration: duration)
+                isComingBackwards = false
             }
         }
         else if currentPage == numberOfPages - 1 {
